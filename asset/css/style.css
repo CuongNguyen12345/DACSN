@@ -298,6 +298,9 @@ body {
     max-width: 250px;
 }
 
+.feature .img img {
+    width: 100%;
+}
 
 .feature h3 {
     font-size: 1.2em;
@@ -309,6 +312,10 @@ body {
 
 
 /* Section wrapper */
+
+.technology-title {
+    text-align: center;
+}
 .technology-cards {
     display: flex;
     justify-content: space-around;
@@ -334,3 +341,33 @@ body {
     width: 300px;
     transition: transform 0.3s ease;
 }
+
+
+/* footer */
+.footer .top {
+    background-color: #1A8065;
+}
+
+.footer .top .menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 4px 0;
+}
+
+.footer .top .menu .item {
+    padding: 7px 7px;
+}
+
+.footer .top .menu .item:hover {
+    background-color: var(--green1);
+}
+
+.footer .top .menu .item a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+/* End footer */
