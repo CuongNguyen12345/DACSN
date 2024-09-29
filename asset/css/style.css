@@ -18,6 +18,10 @@ body {
     width: 1180px;
     margin: 0 auto;
 }
+
+.row {
+    display: flex;
+}
 /* Header */
 .header {
     position: sticky;

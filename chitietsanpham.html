@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./asset/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/chitietsanpham.css">
 </head>
-
 <body>
     <header class="header">
         <div class="navbar">
@@ -47,7 +43,7 @@
         <div class="main stap-main">
             <ul class="menu">
                 <li class="item">
-                    <a href="#">
+                    <a href="./index.html">
                         <i class="fa-solid fa-house"></i>Trang chủ
                     </a>
                 </li>
@@ -103,103 +99,56 @@
     </header>
 
     <main class="main">
-        <div class="slider">
-            <img src="../DoAn/img/SLIDER1.jpg" alt="">
-        </div>
-        <div class="foot">
-            <img src="./asset/img/index-1.png" alt="">
-        </div>
-        <div class="about-section">
-            <h2 class="about-title">ĐÔI NÉT VỀ THU HƯƠNG SPA</h2>
-            <p class="about-description">
-                Đội ngũ kĩ thuật viên dày dạn kinh nghiệm, giàu thành tích, luôn đi đầu trong việc ứng dụng những công
-                nghệ hiện đại, phong cách phục vụ chuyên nghiệp, thẩm mỹ viện Thu Hương tự hào là hệ thống thẩm mỹ viện
-                uy tín tại Việt Nam, đem đến cho khách hàng vẻ đẹp hoàn mỹ nhất.
-            </p>
+        <div class="container">
+            <div class="row">
+                <div class="img">
+                    <img src="./asset/img/spa-sp1.jpg" alt="sản phẩm">
+                </div>
+                <div class="description">
+                    <nav>
+                        <a href="./index.html">Trang chủ</a>
+                        <span>/</span>
+                        <a href="./product.html">Mỹ phẩm</a>
+                    </nav>
+                    <h1>
+                        Bộ dưỡng da trà xanh Green tea Special KT
+                    </h1>
 
-            <div class="about-features">
-                <div class="feature">
-                    <div class="img">
-                        <img src="https://spathammyvien.langsonweb.com/wp-content/uploads/2018/06/phuc-vu-tan-tinh-300x298.png"
-                            alt="Đội ngũ chuyên gia">
+                    <div class="order">
+                        <span>500.000Đ</span>
+                        <p>
+                            Các sản phẩm dưỡng da từ Pháp luôn được các nàng tin tưởng, ngay cả những bạn khó tính nhất bởi chất lượng và độ an toàn, do được kiểm định vô cùng gắt gao.
+                        </p>
+                        <!-- <input type="button" value="-"> -->
+                        <div class="input">
+                           <input type="number" class="btn btn-num" min="1" max="999" value="1">
+                           <input type="button" class="btn btn-buy" value="MUA HÀNG">
+                        </div>  
+
+                        <div class="input inp-buy">
+                            <h3>MUA NGAY</h3>
+                            <span>Gọi điện xác nhận và giao hàng tận nơi</span>
+                        </div>
+                        
+                        
                     </div>
-                    <h3>Đội ngũ chuyên gia</h3>
-                    <p>Không ngừng học hỏi, trao đổi những công nghệ làm đẹp hàng đầu thế giới</p>
-                </div>
-                <div class="feature">
-                    <div class="img">
-                        <img src="https://spathammyvien.langsonweb.com/wp-content/uploads/2018/06/chat-luong-vang-300x298.png"
-                            alt="Thương hiệu uy tín">
+
+                    <span class="product">
+                        Danh mục: Mỹ phẩm
+                    </span>
+
+                    <div class="icon-social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-regular fa-envelope"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                        <i class="fa-brands fa-linkedin"></i>
                     </div>
-                    <h3>Thương hiệu uy tín</h3>
-                    <p>Được đánh giá bằng những phản hồi và sự hài lòng của khách hàng</p>
-                </div>
-                <div class="feature">
-                    <div class="img">
-                        <img src="https://spathammyvien.langsonweb.com/wp-content/uploads/2018/06/may-moc-hien-dai-300x298.png"
-                            alt="Máy móc hiện đại">
-                    </div>
-                    <h3>Máy móc hiện đại</h3>
-                    <p>Luôn đi đầu trong việc cập nhật những máy móc mới, hiện đại trên thế giới</p>
-                </div>
-                <div class="feature">
-                    <div class="img">
-                        <img src="https://spathammyvien.langsonweb.com/wp-content/uploads/2018/06/phuc-vu-tan-tinh-300x298.png"
-                            alt="Phục vụ chuyên nghiệp">
-                    </div>
-                    <h3>Phục vụ chuyên nghiệp</h3>
-                    <p>Niềm tin và sự hài lòng của khách hàng là thành công của chúng tôi</p>
                 </div>
             </div>
         </div>
-        <div class="foot">
-        <img src="./asset/img/index-1.png" alt="">
-        </div>
-        <div class="slider">
-            <img src="https://spathammyvien.langsonweb.com/wp-content/uploads/2018/06/banner-header.jpg">
-        </div>
-        <div class="foot">
-        <img src="./asset/img/index-1.png" alt="">
-        </div>
-
-        <div class="technology-section">
-            <h2 class="technology-title">CÔNG NGHỆ HIỆN ĐẠI TẠI THU HƯƠNG SPA</h2>
-            <div class="technology-cards">
-                <div class="technology-card">
-                    <img src="https://spathammyvien.langsonweb.com/wp-content/uploads/2018/03/post.jpg"
-                        alt="Just for Beautiful">
-                    <h3>TẠM BIỆT THÂM NÁM, TÀN NHAN ĐẾN 99% VỚI CÔNG NGHỆ FRACTIONAL CO2</h3>
-                    <p>
-                        Bạn tự tin với khuôn mặt đầy những khuyết điểm, sử dụng nhiều phương pháp can thiệp nhưng không
-                        đem lại hiệu quả, đừng lo chúng tôi sẽ [...]
-                    </p>
-                    <a href="#" class="btn">+ Xem chi tiết</a>
-                </div>
-
-                <div class="technology-card">
-                    <img src="https://spathammyvien.langsonweb.com/wp-content/uploads/2018/03/post.jpg"
-                        alt="Spa Relaxing">
-                    <h3>TRẺ HÓA DA, XÓA NHĂN CÙNG CÔNG NGHỆ NÂNG CƠ RF</h3>
-                    <p>
-                        Ngoài 25 tuổi, làn da của bạn sẽ bắt đầu có những dấu hiệu của việc lão hóa, vì thế bạn cần một
-                        chế độ chăm sóc đặc [...]
-                    </p>
-                    <a href="#" class="btn">+ Xem chi tiết</a>
-                </div>
-
-                <div class="technology-card">
-                    <img src="https://spathammyvien.langsonweb.com/wp-content/uploads/2018/03/post.jpg"
-                        alt="Hair Beauty">
-                    <h3>TẠM BIỆT MÁI TÓC XƠ RỐI, KÉM SỨC SỐNG, TẠO KIỂU TÓC HỢP THỜI</h3>
-                    <p>
-                        Xu hướng kiểu tóc mới luôn được các nhà tạo mẫu cập nhật để tư vấn cho khách hàng lựa chọn kiểu
-                        phù hợp sở thích và [...]
-                    </p>
-                    <a href="#" class="btn">+ Xem chi tiết</a>
-                </div>
-            </div>
-        </div>
-
+        
     </main>
 
     <footer class="footer">
@@ -332,5 +281,4 @@
 
     </footer>
 </body>
-
 </html>
