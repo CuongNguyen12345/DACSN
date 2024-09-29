@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 :root {
     --green1: #156953;
     --green2: #1A8065;
@@ -13,6 +14,10 @@ body {
     margin: 0;
 }
 
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
 /* Header */
 .header {
     position: sticky;
@@ -369,5 +374,60 @@ body {
     font-size: 14px;
 }
 
+.footer .main .row {
+    display: flex;
+    justify-content: space-between;
+}
 
+.footer .main .inner-item {
+    width: 23%;
+}
+
+.footer .main .inner-item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer .main .inner-item h3 {
+    background: url(../img/Frame.png) left center no-repeat;
+    padding-left: 40px;
+    margin: 20px 0 30px 0;
+    font-size: 20px;
+    line-height: 27px;
+    color: #38C2DC;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.footer .main .inner-item h3::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 66%;
+    height: 1px;
+    background-color: #000;
+}
+
+.footer .main .inner-item .content {
+    margin-bottom: 10px;
+}
+
+.footer .main .inner-item .content span{
+    display: block;
+    color: var(--green1);
+    font-size: 18px;
+}
+
+.footer .main .inner-item .content a {
+    text-decoration: none;
+    color: #000;
+}
+.footer .main .inner-item .icon-social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .main .inner-item .icon-social i {
+    font-size: 25px;
+}
 /* End footer */
