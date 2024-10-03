@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
 
-    <link href="../asset/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../asset/css/icons.min.css" rel="stylesheet" type="text/css">
-    <link href="../asset/css/app.min.css" rel="stylesheet" type="text/css">
+    <!-- plugin css -->
+    <!-- <link href="assets\libs\datatables\dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="../asset/libs/datatables/buttons.bootstrap4.min.css">
+    <!-- <link href="assets\libs\datatables\responsive.bootstrap4.min.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="../asset/libs/datatables/responsive.bootstrap4.min.css">
+    <!-- <link href="assets\libs\datatables\buttons.bootstrap4.min.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="../asset/libs/datatables/buttons.bootstrap4.min.css">
+    <!-- <link href="assets\libs\datatables\select.bootstrap4.min.css" rel="stylesheet" type="text/css">  -->
+    <link rel="stylesheet" href="../asset/libs/datatables/select.bootstrap4.min.css">
+
+    <!-- App css -->
+    <!-- <link href="assets\css\bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
+    <!-- <link href="assets\css\icons.min.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="../asset/css/icons.min.css">
+    <!-- <link href="assets\css\app.min.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="../asset/css/app.min.css">
 </head>
 
 <body>
@@ -245,9 +259,30 @@
                     <ul class="metismenu" id="side-menu">
                         <li class="menu-title">Danh mục</li>
                         <li>
-                            <a href="./admin.html">
+                            <a href="./TuVan.html">
                                 <i class="fe-airplay"></i>
-                                <span> Thống kê mua bán </span>
+                                <span> Quản lí tư vấn </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./DangKi.html">
+                                <i class="fe-user"></i>
+                                <span> Quản lý đăng kí </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./ThucHienDV.html">
+                                <i class="mdi mdi-playlist-star"></i>
+                                <span> Thực hiện dịch vụ </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./LichSuChamSoc.html">
+                                <i class="mdi mdi-account-group"></i>
+                                <span> Lịch sử chăm sóc </span>
                             </a>
                         </li>
                         <li>
@@ -257,19 +292,7 @@
                             </a>
                         </li>
 
-                        <li>
-                            <a href="./QLLichHen.html">
-                                <i class="fe-user"></i>
-                                <span> Quản lý lịch hẹn </span>
-                            </a>
-                        </li>
 
-                        <li>
-                            <a href="./Customer.html">
-                                <i class="mdi mdi-account-group"></i>
-                                <span> Lịch sử chăm sóc </span>
-                            </a>
-                        </li>
                     </ul>
 
                 </div>
@@ -293,105 +316,78 @@
                 <!-- Start Content-->
                 <div class="container-fluid">
 
-                    <!-- start page title -->
                     <div class="row">
-                        <div class="col-12">
-                            <div class="page-title-box">
-                                <div class="page-title-right">
-                                    <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Simulor</a></li>
-                                        <li class="breadcrumb-item active">Dashboard</li>
-                                    </ol>
-                                </div>
-                                <h4 class="page-title">Dashboard</h4>
-                            </div>
+                        <div class="page-title-box">
+                            <p class="page-title" style="font-weight: bold;">
+                                Danh sách Khách Hàng Hẹn Tư Vấn
+                            </p>
+                        </div>
+
+
+                        <div class="table-responsive">
+                            <table class="table table-striped mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Họ tên</th>
+                                        <th>Số điện thoại</th>
+                                        <th>Ngày Tư Vấn</th>
+                                        <th>Thời gian</th>
+                                        <th>Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td>Nguyễn Văn Mạnh</td>
+                                        <td>06548451223</td>
+                                        <td>10/12/2022</td>
+                                        <td>8 giờ sáng</td>
+                                        <td>
+                                            <button type="button" class="btn btn-success btn-sm">
+                                                <i class="fe-calendar"></i>
+                                            </button>
+                                            <a href="./DangKiDV.html" class="btn btn-info btn-sm">
+                                                <i class="fe-edit"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Nguyễn Văn Cường</td>
+                                        <td>05464525223</td>
+                                        <td>20/04/2022</td>
+                                        <td>9 giờ sáng</td>
+                                        <td>
+                                            <button type="button" class="btn btn-success btn-sm">
+                                                <i class="fe-calendar"></i>
+                                            </button>
+                                            <a href="./DangKiDV.html" class="btn btn-info btn-sm">
+                                                <i class="fe-edit"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Trần Đại Nghĩa</td>
+                                        <td>06548782323</td>
+                                        <td>05/10/2023</td>
+                                        <td>4 giờ chiều</td>
+                                        <td>
+                                            <button type="button" class="btn btn-success btn-sm">
+                                                <i class="fe-calendar"></i>
+                                            </button>
+                                            <a href="./DangKiDV.html" class="btn btn-info btn-sm">
+                                                <i class="fe-edit"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <!-- end page title -->
 
-                    <div class="row">
-                        <div class="col-xl-3 col-lg-6">
-                            <div class="card widget-flat">
-                                <div class="card-body p-0">
-                                    <div class="p-3 pb-0">
-                                        <div class="float-right">
-                                            <i class="mdi mdi-cart text-primary widget-icon">
 
-                                            </i>
-                                        </div>
-                                        <h5 class="text-muted font-weight-normal mt-0">Total Sales</h5>
-                                        <h3 class="mt-2">3,543</h3>
-                                    </div>
-                                    <div id="sparkline1"></div>
-                                </div> <!-- end card-body-->
-                            </div> <!-- end card-->
-                        </div> <!-- end col-->
-
-                        <div class="col-xl-3 col-lg-6">
-                            <div class="card widget-flat">
-                                <div class="card-body p-0">
-                                    <div class="p-3 pb-0">
-                                        <div class="float-right">
-                                            <i class="mdi mdi-currency-usd text-danger widget-icon"></i>
-                                        </div>
-                                        <h5 class="text-muted font-weight-normal mt-0">Income amounts</h5>
-                                        <h3 class="mt-2">21,287</h3>
-                                    </div>
-                                    <div id="sparkline2"></div>
-                                </div> <!-- end card-body-->
-                            </div> <!-- end card-->
-                        </div> <!-- end col-->
-
-                        <div class="col-xl-3 col-lg-6">
-                            <div class="card widget-flat">
-                                <div class="card-body p-0">
-                                    <div class="p-3 pb-0">
-                                        <div class="float-right">
-                                            <i class="mdi mdi-account-multiple text-primary widget-icon"></i>
-                                        </div>
-                                        <h5 class="text-muted font-weight-normal mt-0">Total Users</h5>
-                                        <h3 class="mt-2">5,387</h3>
-                                    </div>
-                                    <div id="sparkline3"></div>
-                                </div> <!-- end card-body-->
-                            </div> <!-- end card-->
-                        </div> <!-- end col-->
-
-                        <div class="col-xl-3 col-lg-6">
-                            <div class="card widget-flat">
-                                <div class="card-body p-0">
-                                    <div class="p-3 pb-0">
-                                        <div class="float-right">
-                                            <i class="mdi mdi-eye-outline text-danger widget-icon"></i>
-                                        </div>
-                                        <h5 class="text-muted font-weight-normal mt-0">Total Visits</h5>
-                                        <h3 class="mt-2">74,315</h3>
-                                    </div>
-                                    <div id="sparkline4"></div>
-                                </div> <!-- end card-body-->
-                            </div> <!-- end card-->
-                        </div> <!-- end col-->
-                    </div>
-                    <!-- end row -->
-
-                    <div class="row">
-                        <div class="col-xl-8">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="header-title">Sales Analytics</h4>
-                                    <canvas id="bar" height="350" class="mt-4"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="header-title">Top Marketplaces</h4>
-                                    <canvas id="doughnut" height="350" class="mt-4"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div> <!-- container-fluid -->
             </div> <!-- content -->
             <!-- Footer Start -->
@@ -415,16 +411,28 @@
         </div>
     </div>
 
-    <!-- Vendor js -->
+
     <script src="../asset/js/vendor.min.js"></script>
-    <!-- Chart JS -->
-    <script src="../asset/libs/chart-js/Chart.bundle.min.js"></script>
-    <!-- Sparkline charts -->
-    <!-- <script src="assets\libs\jquery-sparkline\jquery.sparkline.min.js"></script> -->
-    <script src="../asset/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
-    <!-- Dashboard js -->
-    <!-- <script src="assets\js\pages\dashboard.init.js"></script> -->
-    <script src="../asset/js/pages/dashboard.init.js"></script>
+
+    <!-- datatable js -->
+
+
+    <script src="../asset/libs/datatables/jquery.dataTables.min.js"></script>
+    <script src="../asset/libs/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="../asset/libs/datatables/dataTables.responsive.min.js"></script>
+    <script src="../asset/libs/datatables/responsive.bootstrap4.min.js"></script>
+
+
+    <script src="../asset/libs/datatables/dataTables.buttons.min.js"></script>
+    <script src="../asset/libs/datatables/buttons.bootstrap4.min.js"></script>
+    <script src="../asset/libs/datatables/buttons.html5.min.js"></script>
+    <script src="../asset/libs/datatables/buttons.flash.min.js"></script>
+    <script src="../asset/libs/datatables/buttons.print.min.js"></script>
+    <script src="../asset/libs/datatables/dataTables.keyTable.min.js"></script>
+    <script src="../asset/libs/datatables/dataTables.select.min.js"></script>
+    <!-- Datatables init -->
+    <!-- <script src="assets\js\pages\datatables.init.js"></script> -->
+    <script src="../asset/js/pages/datatables.init.js"></script>
     <!-- App js -->
     <!-- <script src="assets\js\app.min.js"></script> -->
     <script src="../asset/js/app.min.js"></script>
