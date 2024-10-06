@@ -311,14 +311,21 @@
                         <div class="card-body">
                             <h4 class="header-title">Tìm kiếm sản phẩm</h4>
                             <br>
+
+
                             <form class="form-horizontal">
                                 <div class="form-group row">
-                                    <label class="col-lg-1 col-form-label" for="simpleinput">Tên sản phẩm</label>
-                                    <div class="col-lg-5">
+                                    <label class="col-lg-2 col-form-label" for="simpleinput">Tên sản phẩm</label>
+                                    <div class="col-lg-10">
                                         <input type="text" class="form-control" id="simpleinput">
                                     </div>
-                                    <label class="col-lg-1 col-form-label" for="simpleinput">Loại sản phẩm</label>
-                                    <div class="col-lg-4">
+                                </div>
+                            </form>
+
+                            <form class="form-horizontal">
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="simpleinput">Loại sản phẩm</label>
+                                    <div class="col-lg-10">
                                         <select name="" id="" class="form-control">
                                             <option value="">--Chọn loại sản phẩm--</option>
                                             <option value="">Chăm sóc da</option>
@@ -327,33 +334,44 @@
                                         </select>
                                     </div>
                                 </div>
-
-
-
                             </form>
 
                             <form class="form-horizontal">
                                 <div class="form-group row">
-                                    <label class="col-lg-1 col-form-label" for="simpleinput">Giá cả từ</label>
-                                    <div class="col-lg-3">
-                                        <input type="text" class="form-control" id="simpleinput">
-                                    </div>
-                                    <label class="col-lg-1 col-form-label" for="simpleinput">Giá cả đến</label>
-                                    <div class="col-lg-3">
+                                    <label class="col-lg-2 col-form-label" for="simpleinput">Giá cả</label>
+                                    <div class="col-lg-10">
                                         <input type="text" class="form-control" id="simpleinput">
                                     </div>
                                 </div>
                             </form>
-                            <div class="button-list">
-                                <a href="../Admin/ThemSanPham.html" class="btn btn-warning float-right" title="Thêm sản phẩm">
-                                    <i class="fe-plus"></i>
-                                </a>
-
-                                <button type="button" class="btn btn-success float-right" title="Tìm kiếm sản phẩm">
-                                    <i class="fe-search"></i>
-                                </button>
-
-                            </div>
+                            <form class="form-horizontal">
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="simpleinput">Hạn sử dụng</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" class="form-control" id="simpleinput">
+                                    </div>
+                                </div>
+                            </form>
+                            
+                            <form class="form-horizontal">
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="simpleinput">Hình đại diện</label>
+                                    <input type="file" class="col-lg-4">
+                                    <div class="col-lg-6">
+                                        <img src="" alt="Ảnh mẫu" width="300px" height="300px">
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="form-horizontal">
+                                <div class="form-group row">
+                                    <div class="col-lg-5"></div>
+                                    <div class="col-lg-3">
+                                        <button type="button" class="btn btn-primary">Sửa sản phẩm</button>
+                                        <a href="../Admin/Product.html" class="btn btn-primary">Hủy thao tác</a>
+                                    </div>
+                                    
+                                </div>
+                            </form>
                             
 
                         </div> <!-- end card-box -->
@@ -361,61 +379,6 @@
                 </div><!-- end col -->
             </div>
 
-            <table class="table mb-0">
-                <thead class="thead-light">
-                    <tr>
-                        <th>#</th>
-                        <th>Tên sản phẩm</th>
-                        <th>Hạn sử dụng</th>
-                        <th>Giá cả</th>
-                        <th>Thao tác</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Sữa rửa mặt dạng gel</td>
-                        <td>20/12/2027</td>
-                        <td>600.000 VND</td>
-                        <td>
-                            <a href="../Admin/SuaSanPham.html" class="btn btn-primary btn-sm" title="Sửa sản phẩm">
-                                <i class="fe-edit-1"></i>
-                            </a>
-                            <button type="button" class="btn btn-danger btn-sm" title="Xóa sản phẩm">
-                                <i class="fe-trash-2"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Toner cấp ẩm</td>
-                        <td>13/12/2027</td>
-                        <td>800.000 VND</td>
-                        <td>
-                            <a href="../Admin/SuaSanPham.html" class="btn btn-primary btn-sm" title="Sửa sản phẩm">
-                                <i class="fe-edit-1"></i>
-                            </a>
-                            <button type="button" class="btn btn-danger btn-sm" title="Xóa sản phẩm">
-                                <i class="fe-trash-2"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Kem dưỡng ẩm dạng gel</td>
-                        <td>20/06/2027</td>
-                        <td>900.000 VND</td>
-                        <td>
-                            <a href="../Admin/SuaSanPham.html" class="btn btn-primary btn-sm" title="Sửa sản phẩm">
-                                <i class="fe-edit-1"></i>
-                            </a>
-                            <button type="button" class="btn btn-danger btn-sm" title="Xóa sản phẩm">
-                                <i class="fe-trash-2"></i>
-                            </button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
             <!-- Footer Start -->
             <footer class="footer">
                 <div class="container-fluid">
